@@ -648,8 +648,8 @@
 	} else  {
 		UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
 		[button setImage:self.options[AMOptionsButtonIcon] forState:UIControlStateNormal];
-		[button setFrame:CGRectMake(0, 0, 44, 22)];
-		button.imageEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 10);
+        [button setFrame:CGRectMake(0, 0, 28, 22)];
+        //		button.imageEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 10);
 		[button addTarget:self action:@selector(toggleMenu) forControlEvents:UIControlEventTouchUpInside];
 		self.barButton = [[UIBarButtonItem alloc] initWithCustomView:button];
 		
